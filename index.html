@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Grade Table</h1>
+        <div class="inputContainer">
+         <input type="text" id="inputBox" placeholder="Enter your score">
+        <button id="clickBtn">CLICK</button>
+        </div>
+
+        <div class="" id="displayContainer">
+
+        </div>
+    </div>
+    <script>
+
+        let gradeOne = "A";
+        let gradeTwo = "A-";
+        let gradeThree = "B+";
+        let gradeFour = "B";
+        let gradeFive = "B-";
+        let gradeSix = "C+";
+        let gradeSeven = "C";
+        let gradeEight = "C-";
+        let gradeNine = "D+";
+        let gradeTen = "D";
+        let gradeEleven= "D-";
+        let gradeTwelve= "E";
+
+        let inputBox;
+
+         inputBox= document.getElementById("inputBox");
+        let clickedBtn = document.getElementById("clckBtn");
+        let displayPlace = document.getElementById("displayContainer");
+        clickBtn.addEventListener("click",function () {
+            if (inputBox.value ==="") {
+                window.alert("Please enter your Grade");
+            }
+            else if ( inputBox.value >=90 && inputBox.value <= 100 ){
+                let li = document.createElement("li");
+                li.innerHTML = "Your grade is " + gradeOne;
+                displayPlace.appendChild(li);
+            }
+            else if ( inputBox.value >=80 && inputBox.value <= 89 ){
+                let li = document.createElement("li");
+                li.innerHTML = "Your grade is " + gradeTwo;
+                displayPlace.appendChild(li);
+            }
+            else if ( inputBox.value >=75 && inputBox.value <= 79 ){
+                let li = document.createElement("li");
+                li.innerHTML = "Your grade is " + gradeThree;
+                displayPlace.appendChild(li);
+            }
+            else if ( inputBox.value >=65 && inputBox.value <= 74 ){
+                let li = document.createElement("li");
+                li.innerHTML = "Your grade is " + gradeFour;
+                displayPlace.appendChild(li);
+            }
+            else if ( inputBox.value >=56 && inputBox.value <= 64 ){
+                let li = document.createElement("li");
+                li.innerHTML = "Your grade is " + gradeFive;
+                displayPlace.appendChild(li);
+            }
+            else if ( inputBox.value >=50 && inputBox.value <= 55 ){
+                let li = document.createElement("li");
+                li.innerHTML = "Your grade is " + gradeSix;
+                displayPlace.appendChild(li);
+            }
+            else if ( inputBox.value >=45 && inputBox.value <= 49 ){
+                let li = document.createElement("li");
+                li.innerHTML = "Your grade is " + gradeSeven;
+                displayPlace.appendChild(li);
+            }
+            else if ( inputBox.value >=40 && inputBox.value <= 44 ){
+                let li = document.createElement("li");
+                li.innerHTML = "Your grade is " + gradeEight;
+                displayPlace.appendChild(li);
+            }
+            else if ( inputBox.value >=36 && inputBox.value <= 39 ){
+                let li = document.createElement("li");
+                li.innerHTML = "Your grade is " + gradeNine;
+                displayPlace.appendChild(li);
+            }
+            else if ( inputBox.value >=33 && inputBox.value <= 35 ){
+                let li = document.createElement("li");
+                li.innerHTML = "Your grade is " + gradeTen;
+                displayPlace.appendChild(li);
+            }
+            else if ( inputBox.value >=31 && inputBox.value <= 32 ){
+                let li = document.createElement("li");
+                li.innerHTML = "Your grade is " + gradeEleven;
+                displayPlace.appendChild(li);
+            }
+            else {
+                let li = document.createElement("li");
+                li.innerHTML = "gradeTwelve";
+                displayPlace.appendChild(li);
+            }
+        });
+           
+        
+    </script>
+</body>
+</html>

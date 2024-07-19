@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+
+
+
+.container{
+    display: grid;
+    justify-content: center;
+    margin-top: 25%;
+}
+.inputContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+#displayContainer ul li{
+    text-decoration: none !important;
+    list-style: numeric;
+}
+
+
+
+
+#clickBtn{
+    cursor: pointer !important;
+    border: none !important;
+    width: 100px !important;
+    height: 45px !important;
+    background: rgb(7, 7, 131) !important;
+    border-radius: 50px;
+    color: white !important;
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+}
+#clickBtn:hover{
+    content: "Click Me";
+    background: rgb(75, 75, 11) !important;
+    box-shadow: 3px 3px 5px blue !important;
+}
+
+#inputBox{
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 5px;
+}
